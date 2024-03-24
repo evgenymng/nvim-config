@@ -5,7 +5,7 @@ return {
     config = function()
         require("kanagawa").setup({
             terminalColors = true,
-            transparent = true,
+            transparent = false,
         })
 
         vim.cmd("colorscheme kanagawa-dragon")
@@ -20,9 +20,8 @@ return {
 
         vim.api.nvim_set_hl(0, "Visual", { bg = "#303030" })
 
-        vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
+        -- vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
 
-        vim.api.nvim_set_hl(0, "StatusLine", { bg = "none" })
         vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "none" })
 
         vim.api.nvim_set_hl(0, "Pmenu", { bg = "none" })
