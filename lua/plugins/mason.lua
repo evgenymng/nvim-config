@@ -20,7 +20,6 @@ return {
         mason_lspconfig.setup({
             ensure_installed = {
                 -- "mypy",
-                -- "ruff",
                 "ruff_lsp",
                 "pyright",
                 "lua_ls",

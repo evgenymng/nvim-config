@@ -36,6 +36,7 @@ local function config()
 
     local servers = {
         "pylsp",
+        "pyright",
         "clangd",
         "rust_analyzer",
         "typst_lsp",

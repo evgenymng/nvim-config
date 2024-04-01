@@ -1,10 +1,10 @@
-function on_attach(client, bufnr)
-    -- vim.keymap.set("n", "<A-j>", "<cmd>m .+1<cr>==", { buf = bufnr, desc = "Move line down" })
-    -- vim.keymap.set("n", "<A-k>", "<cmd>m .-2<cr>==", { buf = bufnr, desc = "Move line up" })
-    -- vim.keymap.set("i", "<A-j>", "<esc><cmd>m .+1<cr>==gi", { buf = bufnr, desc = "Move line down" })
-    -- vim.keymap.set("i", "<A-k>", "<esc><cmd>m .-2<cr>==gi", { buf = bufnr, desc = "Move line up" })
-    -- vim.keymap.set("v", "<A-j>", ":m '>+1<cr>gv=gv", { buf = bufnr, desc = "Move line down" })
-    -- vim.keymap.set("v", "<A-k>", ":m '<-2<cr>gv=gv", { buf = bufnr, desc = "Move line up" })
+function on_attach(_, bufnr)
+    vim.keymap.set("n", "<A-j>", "<cmd>m .+1<cr>==", { buf = bufnr, desc = "Move line down" })
+    vim.keymap.set("n", "<A-k>", "<cmd>m .-2<cr>==", { buf = bufnr, desc = "Move line up" })
+    vim.keymap.set("i", "<A-j>", "<esc><cmd>m .+1<cr>==gi", { buf = bufnr, desc = "Move line down" })
+    vim.keymap.set("i", "<A-k>", "<esc><cmd>m .-2<cr>==gi", { buf = bufnr, desc = "Move line up" })
+    vim.keymap.set("v", "<A-j>", ":m '>+1<cr>gv=gv", { buf = bufnr, desc = "Move line down" })
+    vim.keymap.set("v", "<A-k>", ":m '<-2<cr>gv=gv", { buf = bufnr, desc = "Move line up" })
 end
 
 function config()
