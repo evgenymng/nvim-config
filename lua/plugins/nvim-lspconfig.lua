@@ -66,7 +66,17 @@ local function config()
             diagnostics = {
                 globals = { "vim", "require" }
             }
-        }
+        },
+        ["rust-analyzer"] = {
+            procMacro = {
+                ignored = {
+                    leptos_macro = {
+                        "component",
+                        "server",
+                    },
+                },
+            },
+        },
     }
 
     for _, server in ipairs(servers) do
