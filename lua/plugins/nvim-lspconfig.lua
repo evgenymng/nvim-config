@@ -42,6 +42,7 @@ local function config()
         "typst_lsp",
         "lua_ls",
         "ruff_lsp",
+        "gopls",
     }
 
     local settings = {
