@@ -19,7 +19,6 @@ return {
 
         mason_lspconfig.setup({
             ensure_installed = {
-                -- "mypy",
                 "ruff_lsp",
                 "pyright",
                 "lua_ls",
@@ -27,6 +26,7 @@ return {
                 "typst_lsp",
                 "texlab",
                 "clangd",
+                "gopls",
             },
         })
     end,
