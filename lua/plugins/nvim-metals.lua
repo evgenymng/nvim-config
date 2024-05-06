@@ -1,4 +1,7 @@
 local function on_attach(client, bufnr)
+    local metals = require("metals")
+    metals.setup_dap()
+
     local keymap = vim.keymap
     local opts = { buffer = bufnr, noremap = true, silent = true }
 
@@ -42,8 +45,9 @@ return {
     },
     ft = { "scala", "sbt", "java" },
     opts = function()
-        local metals_config = require("metals").bare_config()
-        metals_config.on_attach = on_attach
+        local metals = require("metals")
+        local metals_config = metals.bare_config()
+        metals_config.on_attach = on_attach        
         return metals_config
     end,
     config = function(self, metals_config)

@@ -1,4 +1,4 @@
-function bind_keys(opts)
+local function bind_keys(opts)
     local dap = require("dap")
     local dap_widgets = require("dap.ui.widgets")
 
@@ -20,5 +20,5 @@ function bind_keys(opts)
 end
 
 return {
-    bind_keys,
+    bind_keys = bind_keys,
 }
