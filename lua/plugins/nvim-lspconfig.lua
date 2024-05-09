@@ -43,6 +43,7 @@ local function config()
         "lua_ls",
         "ruff_lsp",
         "gopls",
+        "htmx",
     }
 
     local settings = {

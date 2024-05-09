@@ -10,7 +10,7 @@ end
 function config()
     local treesitter_configs = require("nvim-treesitter.configs")
     treesitter_configs.setup({
-        ensure_installed = { "c", "cpp", "lua", "go", "python", "rust", "vimdoc", "vim" },
+        ensure_installed = { "c", "cpp", "lua", "go", "html", "python", "rust", "vimdoc", "vim" },
         auto_install = false,
         highlight = { enable = true },
         indent = { enable = true },
