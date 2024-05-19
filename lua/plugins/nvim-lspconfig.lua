@@ -62,10 +62,6 @@ local function config()
                 mypy = {
                     enabled = true,
                 },
-                pylsp_rope = {
-                    enabled = true,
-                    rename = true,
-                },
                 rope_autoimport = {
                     enabled = true,
                 },
