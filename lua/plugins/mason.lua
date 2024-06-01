@@ -28,6 +28,8 @@ return {
                 "texlab",
                 "clangd",
                 "gopls",
+                "tsserver",
+                "svelte",
             },
         })
     end,
