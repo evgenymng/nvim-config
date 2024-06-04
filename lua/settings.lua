@@ -31,3 +31,14 @@ vim.opt.mouse = "a"
 vim.opt.clipboard:append("unnamedplus")
 
 vim.opt.undofile = true
+
+-- golines formatting
+vim.g.go_fmt_command = "golines"
+vim.g.go_fmt_options = { golines = "-m 79"}
+
+
+function format_go_code()
+    vim.cmd("silent! lua vim.lsp.buf.format({ async = true })")
+end
+
+vim.api.nvim_set_keymap("n", "<leader>gf", ":lua format_go_code()<CR>", { noremap = true, silent = true})

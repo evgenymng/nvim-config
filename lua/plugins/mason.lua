@@ -30,6 +30,7 @@ return {
                 "gopls",
                 "tsserver",
                 "svelte",
+                "golangci_lint_ls",
             },
         })
     end,

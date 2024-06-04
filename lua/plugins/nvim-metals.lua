@@ -47,7 +47,12 @@ return {
     opts = function()
         local metals = require("metals")
         local metals_config = metals.bare_config()
-        metals_config.on_attach = on_attach        
+        metals_config.on_attach = on_attach
+        metals_config.settings = {
+            showImplicitArguments = true,
+            showImplicitConversionsAndClasses = true,
+            showInferredType = true,
+        }
         return metals_config
     end,
     config = function(self, metals_config)
