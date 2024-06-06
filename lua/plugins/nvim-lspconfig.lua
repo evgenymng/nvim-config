@@ -45,6 +45,8 @@ local function config()
         "gopls",
         "tsserver",
         "svelte",
+        "vuels",
+        "cssls",
         "htmx",
         "golangci_lint_ls",
     }
