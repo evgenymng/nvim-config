@@ -7,20 +7,20 @@ return {
         require("lualine").setup({
             options = {
                 icons_enabled = false,
-                theme = "auto",
+                theme = "gruvbox-material",
                 component_separators = {
-                    left = "",
-                    right = "",
+                    left = "",
+                    right = "",
                 },
                 section_separators = {
-                    left = "",
-                    right = "",
+                    left = "",
+                    right = "",
                 },
                 always_divide_middle = false,
             },
             sections = {
-                lualine_a = {"branch"},
-                lualine_b = {"diff"},
+                lualine_a = {"mode"},
+                lualine_b = {"branch", "diff"},
                 lualine_c = {"filename"},
                 lualine_x = {},
                 lualine_y = {"filetype"},
