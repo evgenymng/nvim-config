@@ -24,6 +24,8 @@ function config()
             "svelte",
             "javascript",
             "typescript",
+            "markdown",
+            "markdown_inline"
         },
         auto_install = false,
         highlight = { enable = true },
