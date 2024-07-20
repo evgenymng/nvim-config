@@ -16,7 +16,6 @@ require("lazy").setup("plugins", {
     install = {
         colorscheme = {
             "kanagawa",
-            flavor = "dragon",
         },
     },
     checker = {
